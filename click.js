@@ -12,8 +12,6 @@ $(document).ready(function() {
     "baby tiger"
   ];
 
-
-
      $.each(topics, function(i, val) {
 
           var button = $("<button>");
@@ -25,7 +23,6 @@ $(document).ready(function() {
           $(".jumbotron").append(button);
 
     })
-
 
 
  $("#buttonWell").on("click", 'button', function() {
@@ -49,14 +46,13 @@ $(document).ready(function() {
         console.log("answer is: " + answer[k])
       
         var rating = $("<p>").text("Rating: " + answer[k].rating);
-        var imageGif = $("<img>");
-        imageGif.attr("src", answer[k].images.downsized.url);
-        $("#images").prepend(imageGif).append(rating);
+        var imageGif = $("<img>").text(rating);
+        imageGif.attr("src", answer[k].images.fixed_height.url);
+        $("#images").prepend(imageGif).after(rating);
         imageGif.css("padding", "8px");
         imageGif.addClass("gif");
-          var animateGif= imageGif.attr("data-animate", answer[k].images.downsized.url);
-        var stillGif= imageGif.attr("data-still", answer[k].images.downsized_still.url);
-         // var stateGif= imageGif.attr("data-state", still);
+        var animateGif= imageGif.attr("data-animate", answer[k].images.fixed_height.url);
+        var stillGif= imageGif.attr("data-still", answer[k].images.fixed_height_still.url);
        }
 
       
@@ -81,19 +77,17 @@ $(document).ready(function() {
     });
 
 
-      // This function handles events where a submit button is clicked
-      $("#btn-submit-lg").on("click", function(event) {
+      // submit button is clicked
+      $(".btn btn-default").on("click", function(event) {
         event.preventDefault();
-        // This line grabs the input from the textbox
-        var newTag = $("#new-tag").val().trim();
-
-        // Adding movie from the textbox to our array
-        topics.push(answer);
-
+        // This grabs the input from the textbox
+        var newTag = $("#input-id").text(JSON.stringify(response));
+        newTag.push(topics[i]);
+        console.log(newTag);
       });
 
       $(document).on("click", "<img>", response);
-
+          
 });
 });
  });
