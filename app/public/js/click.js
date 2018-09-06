@@ -42,13 +42,13 @@ $(document).ready(function() {
 
       for (var k = 0; k < 10; k++) {
 
-      var answer = response.data
-        console.log("answer is: " + answer[k])
+      var answer = response.volumes;
+        console.log("answer is: " + volumes[k])
       
         var rating = $("<p>").text("Rating: " + answer[k].rating);
         var imageGif = $("<img>").text(rating);
         imageGif.attr("src", answer[k].images.fixed_height.url);
-        $("#images").prepend(imageGif).after(rating);
+        $("#images").prepend(imageGif).before(rating);
         imageGif.css("padding", "8px");
         imageGif.addClass("gif");
         var animateGif= imageGif.attr("data-animate", answer[k].images.fixed_height.url);
