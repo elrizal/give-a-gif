@@ -1,4 +1,120 @@
-button{
-
-	background-color: red;
+body {
+	background-color: #262628 !important;
 }
+#topimg {
+	max-height: 80%;
+	background: #536dfe;
+}
+.btn, .btn-large, .btn-small {
+	text-decoration: none;
+	color: #fff;
+	margin: 3px;
+	background-color: #26a69a;
+	text-align: center;
+	letter-spacing: .5px;
+	-webkit-transition: background-color .2s ease-out;
+	transition: background-color .2s ease-out;
+	cursor: pointer;
+}
+.imgdis {
+	margin: 10px;
+	max-height: 150px
+}
+#images {
+	padding: 20px;
+}
+.intro {
+	color: #7b7b7b;
+	font-size: 1em;
+}
+h1 { 
+	text-align: center;
+	font-family: 'Monoton', sans-serif;
+}
+.cardA {
+	position: unset;
+	margin: .9rem;
+	background-color: #fff;
+	-webkit-transition: -webkit-box-shadow .25s;
+	transition: -webkit-box-shadow .25s;
+	transition: box-shadow .25s;
+	transition: box-shadow .25s, -webkit-box-shadow .25s;
+	border-radius: 2px;
+	display: inline-grid !important;
+}
+
+btn {
+	background-color: #9575cd !important;
+	margin: 8px;
+}
+.header {
+	z-index: 1;
+	position: relative;
+  }
+  
+  .header .skew:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 140px;
+	background: #536dfe;
+	z-index: -1;
+	-webkit-transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-ms-transform: skewY(-2deg);
+	-o-transform: skewY(-2deg);
+	transform: skewY(-2deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: initial;
+  }
+  
+  .header .skew .header-inner {
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .logo {
+	margin: 0;
+  }
+  
+  .logo a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .container {
+	padding-top: 60px;
+  }
+  
+  .main-container {
+	background: #00bcd4;
+	position: relative;
+  }
+  
+  .main-container:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -36px;
+	width: 100%;
+	height: 60px;
+	background: #00bcd4;
+	-webkit-transform: skewY(2.5deg);
+	-moz-transform: skewY(2.5deg);
+	-ms-transform: skewY(2.5deg);
+	-o-transform: skewY(2.5deg);
+	transform: skewY(2.5deg);
+	-webkit-backface-visibility: hidden;
+  }
+  
+  section {
+	margin: 10px auto;
+	padding: 0 20px;
+	padding-bottom: 10px;
+	position: relative;
+	max-width: 600px;
+  }

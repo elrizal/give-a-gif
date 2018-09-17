@@ -2,8 +2,8 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 var app = express();
-var charData = require("../data/characters.js");
 
+// var charData = require("../data/characters.js");
 	module.exports = function(app) {
 		app.get("/api/characters", function(req, res) {
 			  res.json(charData);
