@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-	<title>Gif-tastic!</title>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <title>Gif-tastic!</title>
 	<link rel="stylesheet" href="./style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"></head>
+	<link rel="stylesheet" href="./style/grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
 <body>
-	<div  class="parallax-container">
-		<div class="parallax" id='topimg'>    
-			<img  src='./images/jf.jpeg'>          
+    <div class="parallax-container">
+			<nav>
+					<div class="nav-wrapper">
+					  <a href="#!" class="brand-logo animated jello delay-2s">Give a Gif!</a>
+					  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					  <ul class="right hide-on-med-and-down">
+						<li><a href="sass.html">About</a></li>
+						<li><a href="collapsible.html">Sources</a></li>
+						<li><a href="badges.html">Portfolio</a></li>
+					  </ul>
+					</div>
+				  </nav>
+				
+				  <ul class="sidenav" id="mobile-demo" align="right">
+						<li><a href="sass.html">About</a></li>
+						<li><a href="collapsible.html">Sources</a></li>
+						<li><a href="badges.html">Portfolio</a></li>
+				  </ul>
+
+  <ul class="sidenav" id="mobile-demo">
+		<li><a href="sass.html">Sass</a></li>
+		<li><a href="badges.html">Components</a></li>
+		<li><a href="collapsible.html">Javascript</a></li>
+		<li><a href="mobile.html">Mobile</a></li>
+	  </ul>
+			  
+        <div class="parallax" id='topimg'>
+            <img src='./images/jf.jpeg'>
+        </div>
+        </div>
+        <header class="header" id="header">
+            <div class="skew">
+                <div class="header-inner">
+                    <div class="container">
+                        <div class="row">
+							<p class="intro">Touch a button.<br> See the Gif magic happen.</p>
+                            <div class="col s12 m8 l8">
+                                <div id="buttonWell">
+                                </div>
+                            </div>
+                            <div class="col s12 m4 l4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" input-id="new-tag" placeholder="Show Me...">
+                                    <span class="input-group-btn">
+												<div class="animated  bounce delay-2s"><button class="btn btn-default " type="button">Add New Tag</button></div>
+											</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+	<div id="columns">
+            <div id="animals" align='center'>
+            </div>
 		</div>
-	</div>
-	<header class="header" id="header">
-			<div class="skew">
-				<div class="header-inner">
-				  <h1 class="logo">
-					<a href="/">Give a Gif</a></h1>
-				</div>
-			</div>
-		  </header>
-	<div class="container" style="margin-top: 10px;">
-		<div  style="padding: 10px;">
-			<div class="row">
-			<div class="col l10">
-			<p class="intro">Touch a button. See the Gif magic happen.</p>
-					<div id="buttonWell">
-			</div>
-			</div> 
-			<div class="col l2">
-				<div class="input-group">
-					<input type="text" class="form-control" input-id="new-tag" placeholder="Search for...">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">Submit</button>
-					</span>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			
-			<div id="images">
-		
-		</div>
-		</div>
-	</div>
-</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-	<script src="./js/click.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./js/click.js"></script>
 </body>
+
 </html>

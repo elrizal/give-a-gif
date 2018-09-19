@@ -1,120 +1,199 @@
 body {
-	background-color: #262628 !important;
+    background-color: #dadada !important;
 }
-#topimg {
-	max-height: 80%;
-	background: #536dfe;
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+	font-weight: 600;
+	font-size: 5em;
+  src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
-.btn, .btn-large, .btn-small {
-	text-decoration: none;
-	color: #fff;
-	margin: 3px;
-	background-color: #26a69a;
-	text-align: center;
-	letter-spacing: .5px;
-	-webkit-transition: background-color .2s ease-out;
-	transition: background-color .2s ease-out;
-	cursor: pointer;
-}
-.imgdis {
-	margin: 10px;
-	max-height: 150px
-}
-#images {
-	padding: 20px;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size:50px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 .intro {
-	color: #7b7b7b;
-	font-size: 1em;
+    font-size: 2.9em;
+    color: #FFC6C7;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0px;
 }
-h1 { 
-	text-align: center;
-	font-family: 'Monoton', sans-serif;
+.titleCard {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0px;
+	color: #9575cd;
+	padding: 0px;
+	margin-top: 0px;
 }
+
+#topimg {
+    max-height: 80vh;
+    background: #627aff;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+    text-decoration: none;
+    color: #fff;
+    margin: 3px;
+    background-color: #f86c6c !important;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.imgdis {
+		padding: 2px;
+		max-width: 24vw;
+		height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#animals {
+	margin-top: 10px;
+    padding: 20px;
+}
+
+nav {
+		background-color: transparent !important;
+		box-shadow: none !important;
+}
+
+h3,
+.brand-logo {
+    text-align: left;
+    font-family: 'Monoton', sans-serif;
+    margin: 30px;
+    padding: 3px;
+    display: inline-block;
+}
+#buttonWell{
+	margin-bottom: 20px;
+}
+.topul {
+    margin: 10px;
+    display: block;
+}
+
 .cardA {
-	position: unset;
-	margin: .9rem;
-	background-color: #fff;
-	-webkit-transition: -webkit-box-shadow .25s;
-	transition: -webkit-box-shadow .25s;
-	transition: box-shadow .25s;
-	transition: box-shadow .25s, -webkit-box-shadow .25s;
-	border-radius: 2px;
-	display: inline-grid !important;
+    background-color: #fff;
+    border-radius: 3px;
+    display: inline-grid !important;
+		width: 24vw;
+		padding: 18px;
+		border-bottom: 5px solid #9575cd ;
 }
 
 btn {
-	background-color: #9575cd !important;
-	margin: 8px;
+    background-color: #9575cd !important;
+    margin: 8px;
 }
 .header {
-	z-index: 1;
-	position: relative;
-  }
-  
-  .header .skew:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	overflow: visible;
-	width: 100%;
-	height: 140px;
-	background: #536dfe;
-	z-index: -1;
-	-webkit-transform: skewY(-2deg);
-	-moz-transform: skewY(-2deg);
-	-ms-transform: skewY(-2deg);
-	-o-transform: skewY(-2deg);
-	transform: skewY(-2deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: initial;
-  }
-  
-  .header .skew .header-inner {
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-  }
-  
-  .logo {
-	margin: 0;
-  }
-  
-  .logo a {
-	color: #fff;
-	text-decoration: none;
-  }
-  
-  .container {
-	padding-top: 60px;
-  }
-  
-  .main-container {
-	background: #00bcd4;
-	position: relative;
-  }
-  
-  .main-container:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: -36px;
-	width: 100%;
-	height: 60px;
-	background: #00bcd4;
-	-webkit-transform: skewY(2.5deg);
-	-moz-transform: skewY(2.5deg);
-	-ms-transform: skewY(2.5deg);
-	-o-transform: skewY(2.5deg);
-	transform: skewY(2.5deg);
-	-webkit-backface-visibility: hidden;
-  }
-  
-  section {
-	margin: 10px auto;
-	padding: 0 20px;
-	padding-bottom: 10px;
-	position: relative;
-	max-width: 600px;
-  }
+    z-index: 1;
+		position: relative;
+		padding: 10px;
+}
+.header .skew:before {
+		content: '';
+		padding: 100px;
+    position: absolute;
+    left: 0;
+		bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 55vh;
+    background: #3e2e83; /* Old browsers */
+		background: #a50837; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #a50837 0%, #4d009b 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #a50837 0%,#4d009b 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #a50837 0%,#4d009b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a50837', endColorstr='#4d009b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    z-index: -1;
+    -webkit-transform: skewY(-1deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
+
+.header .skew .header-inner {
+    margin-left: auto;
+		margin-right: auto;
+}
+
+
+section {
+    margin: 10px auto;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    max-width: 800px;
+}
+
+.descript {
+    text-align: left;
+}
+placeholder,
+.form-control {
+    color: rgb(185, 185, 185) !important;
+}
+.material-icons {
+	font-size: 3em !important;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .cardA {
+			width: 40vw;
+		}
+		.titleCard {
+			font-size: 1.6em;
+			margin-top: 10px;
+		}
+    .imgdis {
+			 padding: 0px;
+			 max-width: 35vw;
+		}
+		.header .skew:before {
+			max-height: 99.8%;
+		}
+}
+
+@media screen and (min-width: 300px) and (max-width: 667px){
+    .cardA {
+				width: 40vw;
+				padding: 8px;
+    }
+		.intro {
+			font-size: 2.3em;
+		}
+		.titleCard {
+			font-size: 1.1em !important;
+		}
+		body {
+			font-size: 1.1em !important;
+	}
+	.header .skew:before {
+				height: 100%;
+				margin-top: 10px;
+			}
+}

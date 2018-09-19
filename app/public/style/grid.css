@@ -1,0 +1,44 @@
+   #columns {
+       column-width: 320px;
+       column-gap: 15px;
+      width: 95%;
+       max-width: 1200px;
+       margin: 30px auto;
+   }
+   
+   div#columns .cardA {
+       margin: 0 2px 15px;
+       box-shadow: 2px 2px 9px 0px #4747474f;
+       padding: 15px;
+       padding-bottom: 10px;
+       transition: opacity .4s ease-in-out;
+     display: inline-block;
+     column-break-inside: avoid;
+   }
+   
+   div#columns .cardA img {
+       height: auto;
+       max-width: 90%;
+       padding-bottom: 15px;
+       margin-bottom: 5px;
+   }
+
+   div#columns small { 
+     float: right; 
+     color: #aaa;
+   } 
+   
+   div#columns small a { 
+    color: #666; 
+    text-decoration: none; 
+    transition: .4s color;
+   }
+
+   div#columns:hover .cardA:not(:hover) {
+    opacity: 0.4;
+  }
+  
+  @media screen and (max-width: 750px) { 
+    #columns { column-gap: 0px; }
+    #columns .cardA { width: 100%; }
+  }
