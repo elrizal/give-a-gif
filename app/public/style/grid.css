@@ -1,16 +1,16 @@
    #columns {
-       column-width: 320px;
-       column-gap: 15px;
-      width: 95%;
+       column-width: 300px;
+       column-gap: 2px;
+      width: 90%;
        max-width: 1200px;
        margin: 30px auto;
    }
    
    div#columns .cardA {
-       margin: 0 2px 15px;
+       margin: 0 10px 30px;
        box-shadow: 2px 2px 9px 0px #4747474f;
        padding: 15px;
-       padding-bottom: 10px;
+       padding-bottom: 15px;
        transition: opacity .4s ease-in-out;
      display: inline-block;
      column-break-inside: avoid;

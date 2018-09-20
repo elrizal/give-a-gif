@@ -47,17 +47,23 @@
                         <div class="row">
 							<p class="intro">Touch a button.<br> See the Gif magic happen.</p>
                             <div class="col s12 m8 l8">
-                                <div id="buttonWell">
+                                <div id="animal-buttons">
                                 </div>
                             </div>
                             <div class="col s12 m4 l4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" input-id="new-tag" placeholder="Show Me...">
+                                <!-- <form id="animal-form" class="input-group">
+                                    <input type="text" class="form-control" placeholder="Show Me...">
                                     <span class="input-group-btn">
-												<div class="animated  bounce delay-2s"><button class="btn btn-default " type="button">Add New Tag</button></div>
+											<button class="btn btn-default animated  bounce delay-2s" type="submit" value="Submit" id="new-tag">
+												Add New Tag</button>
 											</span>
-
-                                </div>
+								</form> -->
+								<form id="animal-form">
+										<label for="animal-input">Add an animal</label>
+										<input class="form-control" type="text" id="animal-input"><br>
+									
+										<input class="btn btn-default animated  bounce delay-2s" id="add-animal" type="submit" value="Submit">
+									  </form>
                             </div>
                         </div>
                     </div>
@@ -65,8 +71,8 @@
             </div>
         </header>
     </div>
-	<div id="columns">
-            <div id="animals" align='center'>
+	<div class="row" id="columns">
+            <div id="animals">
             </div>
 		</div>
     </div>
