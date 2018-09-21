@@ -59,7 +59,7 @@ $(document).ready(function() {
 
             // Creating and storing an image tag
             var cardHold = $("<div class=\"cardA animated fadeInDown delay-3s \">");
-            var gifImage = $("<img class='imgdis animated fadeIn'>");
+            var gifImage = $("<img class='imgdis'>");
             gifImage.attr("src", still);
             gifImage.attr("data-still", still);
             gifImage.attr("data-animate", animated);
@@ -72,6 +72,18 @@ $(document).ready(function() {
              }
         });
   });
+  $(document).on("click", ".imgdis", function() {
+    var state = $(this).attr("data-state");
+
+    if (state === "still") {
+      $(this).attr("src", $(this).attr("data-animate"));
+      $(this).attr("data-state", "animate");
+    }
+    else {
+      $(this).attr("src", $(this).attr("data-still"));
+      $(this).attr("data-state", "still");
+    }
+});
   $("#add-animal").on("click", function(event) {
     event.preventDefault();
     var newAnimal = $("input").eq(0).val();
