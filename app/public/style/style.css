@@ -85,8 +85,11 @@ h3,
     padding: 3px;
     display: inline-block;
 }
-#buttonWell{
+#animal-buttons{
 	margin-bottom: 20px;
+}
+#animals {
+    min-height: 100vh;
 }
 .topul {
     margin: 10px;
@@ -108,15 +111,15 @@ btn {
 }
 .header {
     z-index: 1;
-		position: relative;
-		padding: 10px;
+	position: relative;
+	padding: 10px;
 }
 .header .skew:before {
-		content: '';
-		padding: 100px;
+	content: '';
+	padding: 100px;
     position: absolute;
     left: 0;
-		bottom: 0;
+	bottom: 0;
     overflow: visible;
     width: 100%;
     height: 55vh;
@@ -135,7 +138,30 @@ btn {
     -webkit-backface-visibility: hidden;
     backface-visibility: initial;
 }
-
+.header-a { 
+    z-index: 1;
+	position: relative;
+	padding: 5px;
+}
+.header-a .skew:before {
+	content: '';
+	padding: 100px;
+    position: absolute;
+    left: 0;
+	bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 10vh;
+    background: #3e2e83;
+    z-index: -1;
+    -webkit-transform: skewY(-1deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
 .header .skew .header-inner {
     margin-left: auto;
 		margin-right: auto;
