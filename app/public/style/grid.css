@@ -1,13 +1,13 @@
    #columns {
-       column-width: 390px;
-       column-gap: 10px;
+       column-width: 370px;
+       column-gap: 5px;
        width: 95%;
        max-width: 1400px;
        margin: 40px auto;
    }
    
    div#columns .cardA {
-       margin: 0 10px 30px;
+       margin: 0 10px 20px;
        box-shadow: 2px 2px 9px 0px #4747474f;
        padding: 15px;
        padding-bottom: 15px;
@@ -18,7 +18,7 @@
    
    div#columns .cardA img {
        height: auto;
-       max-width: 90%;
+       max-width: 85%;
        padding-bottom: 15px;
        margin-bottom: 5px;
    }
