@@ -5,7 +5,7 @@ var http = require("http");
 var request = require("request");
 
 setInterval(function() {
-    http.get("https://gif2018.herokuapp.com/");
+    http.get("http://gif2018.herokuapp.com/");
 }, 200000); // every 5 minutes (300000)
 
 app.use(express.static('public', {

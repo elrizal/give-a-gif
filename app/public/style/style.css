@@ -26,7 +26,7 @@ body {
 }
 .intro {
     font-size: 2.9em;
-    color: #FFC6C7;
+    color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 800;
     padding: 0px;
@@ -60,9 +60,9 @@ body {
     cursor: pointer;
 }
 .imgdis {
-		padding: 2px;
-		max-width: 24vw;
-		height: auto;
+	padding: 2px;
+	max-width: 23vw;
+	height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,9 +100,10 @@ h3,
     background-color: #fff;
     border-radius: 3px;
     display: inline-grid !important;
-		width: 24vw;
-		padding: 20px;
-		border-bottom: 5px solid #9575cd ;
+	width: 24vw;
+    padding: 20px;
+    align-content: center;
+	border-bottom: 5px solid #9575cd ;
 }
 
 btn {
@@ -112,17 +113,17 @@ btn {
 .header {
     z-index: 1;
 	position: relative;
-	padding: 10px;
+	padding: 5px;
 }
 .header .skew:before {
 	content: '';
-	padding: 100px;
+	padding: 50px;
     position: absolute;
     left: 0;
 	bottom: 0;
     overflow: visible;
     width: 100%;
-    height: 55vh;
+    min-height: 45vh;
     background: #3e2e83; /* Old browsers */
 		background: #a50837; /* Old browsers */
 		background: -moz-linear-gradient(45deg, #a50837 0%, #4d009b 100%); /* FF3.6-15 */
@@ -197,7 +198,7 @@ placeholder,
 		}
     .imgdis {
 			 padding: 0px;
-			 max-width: 35vw;
+             max-width: 30vw;
 		}
 		.header .skew:before {
 			max-height: 99.8%;
