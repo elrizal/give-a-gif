@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/elrizal/gifgallery#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "external-ip": "^2.0.3",
     "giphy-api": "^1.2.7",
     "jquery": "^3.3.1",
