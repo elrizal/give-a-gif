@@ -2,6 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 var app = express();
+var CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
 
 // var charData = require("../data/characters.js");
 	module.exports = function(app) {
