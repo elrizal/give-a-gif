@@ -38,7 +38,7 @@ body {
 	margin-bottom: 0px;
 	color: #9575cd;
 	padding: 0px;
-	margin: 2px;
+	margin-top: 0px;
 }
 
 #topimg {
@@ -65,7 +65,7 @@ body {
 	height: auto;
     margin: 0 auto !important;
     justify-content: center !important;
-    align-self: center !important;
+    align-self: center;
 }
 
 #animals {
@@ -74,8 +74,8 @@ body {
 }
 
 nav {
-		background-color: transparent !important;
-		box-shadow: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 h3,
@@ -92,22 +92,21 @@ h3,
 #animals {
     min-height: 100vh;
 }
-.topul {
+.right hide-on-med-and-down {
     margin: 10px;
-    display: block;
+    padding: 10px;
 }
-
 .cardA {
     background-color: #fff;
     border-radius: 3px;
     display: inline-grid !important;
+	width: 23vw;
     padding: 20px;
     align-content: center;
     align-items: center;
     align-text: center;
 	border-bottom: 5px solid #9575cd ;
 }
-
 btn {
     background-color: #9575cd !important;
     margin: 8px;

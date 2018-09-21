@@ -1,5 +1,5 @@
    #columns {
-       column-width: 370px;
+       column-width: 350px;
        column-gap: 5px;
        width: 95%;
        max-width: 1400px;
@@ -18,7 +18,7 @@
    
    div#columns .cardA img {
        height: auto;
-       max-width: 85%;
+       max-width: 90%;
        padding-bottom: 15px;
        margin-bottom: 5px;
    }
@@ -29,7 +29,7 @@
    } 
    
    div#columns small a { 
-    color: #666; 
+    color: rgb(117, 117, 117); 
     text-decoration: none; 
     transition: .4s color;
    }
