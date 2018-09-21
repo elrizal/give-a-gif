@@ -4,15 +4,17 @@ $(document).ready(function() {
   $('.scrollspy').scrollSpy();
 
   var topics = [
+    "cat",
     "kitten",
-    "dogs",
+    "dog",
     "puppy",
     "capybara",
     "chinchilla",
     "rabbit",
     "alpaca",
-    "baby tiger",
+    "tiger",
     "dolphin",
+    "horse"
   ];
   function makeButtons() {
     $("#animal-buttons").empty();
@@ -48,7 +50,7 @@ $(document).ready(function() {
             var animated = results[k].images.fixed_height.url;
             var still = results[k].images.fixed_height_still.url;
             var rating =   results[k].rating;
-             if (rating === "r") {
+             if (rating === "r" || rating ==="pg-13" ) {
              var removed = results.splice(data);
             }
             var gLink = '<a href="' + results[k].url + '" target="_blank">Giphy</a>';

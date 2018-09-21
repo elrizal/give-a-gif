@@ -1,9 +1,9 @@
    #columns {
-       column-width: 330px;
-       column-gap: 2px;
-      width: 90%;
-       max-width: 1200px;
-       margin: 30px auto;
+       column-width: 390px;
+       column-gap: 10px;
+       width: 95%;
+       max-width: 1400px;
+       margin: 40px auto;
    }
    
    div#columns .cardA {

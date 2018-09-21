@@ -60,11 +60,12 @@ body {
     cursor: pointer;
 }
 .imgdis {
-	padding: 2px;
-	max-width: 310px;
+	padding: 3px;
+	max-width: 300px;
 	height: auto;
-    margin: 0 auto;
-    justify-content: center ;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    align-self: center !important;
 }
 
 #animals {
@@ -103,6 +104,8 @@ h3,
 	width: 24vw;
     padding: 20px;
     align-content: center;
+    align-items: center;
+    align-text: center;
 	border-bottom: 5px solid #9575cd ;
 }
 
