@@ -59,6 +59,16 @@ body {
     transition: background-color .2s ease-out;
     cursor: pointer;
 }
+.mainjelly{
+    border-style: none;
+    position: inherit;
+    margin: -70px;
+}
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
 .imgdis {
 	padding: 3px;
 	max-width: 300px;
@@ -82,7 +92,7 @@ h3,
 .brand-logo {
     text-align: left;
     font-family: 'Monoton', sans-serif;
-    margin: 30px;
+    margin: 20px;
     padding: 3px;
     display: inline-block;
 }
@@ -114,7 +124,7 @@ btn {
 .header {
     z-index: 1;
 	position: relative;
-	padding: 5px;
+
 }
 .header .skew:before {
 	content: '';
@@ -124,7 +134,7 @@ btn {
 	bottom: 0;
     overflow: visible;
     width: 100%;
-    min-height: 45vh;
+    min-height: 55vh;
     background: #3e2e83; /* Old browsers */
 		background: #a50837; /* Old browsers */
 		background: -moz-linear-gradient(45deg, #a50837 0%, #4d009b 100%); /* FF3.6-15 */
@@ -183,6 +193,7 @@ section {
 }
 placeholder,
 .form-control {
+    width: 60%;
     color: rgb(185, 185, 185) !important;
 }
 .material-icons {
