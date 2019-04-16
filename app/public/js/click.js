@@ -65,10 +65,10 @@ $(document).ready(function() {
             gifImage.attr("src", still);
             gifImage.attr("data-state", "still");
             gifImage.attr("data-still", still);
-            // gifImage.attr("data-animate", animated);
-            // gifImage.attr("src", animated);
+
             gifImage.attr("alt", "image");
-            
+            gifImage.attr("data-animate", animated);
+            gifImage.attr("src", animated);
             cardHold.append(gifImage, p);
             $("#animals").prepend(cardHold)
              }
@@ -77,18 +77,11 @@ $(document).ready(function() {
   $(document).on("click", ".imgdis", function() {
     var state = $(this).attr("data-state");
     if (state === "still") {
-      gifImage.attr("data-animate", animated);
-      gifImage.attr("src", animated);
-$(this).attr("src", $(this).attr("data-still"));
-$(this).attr("data-state", "still");
-      $(this).attr("src", $(this).attr("data-animate"));
-      $(this).attr("data-state", "animate");
-    }
-    else {
-        gifImage.attr("data-animate", animated);
-            gifImage.attr("src", animated);
       $(this).attr("src", $(this).attr("data-still"));
       $(this).attr("data-state", "still");
+    }
+    else {      gifImage.attr("data-animate", animated);
+    gifImage.attr("src", animated);
     }
 });
   $("#add-animal").on("click", function(event) {

@@ -29,7 +29,8 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 0px;
+    padding: 50px;
+    margin: 0 auto
 }
 .titleCard {
 	font-size: 1.3em;
@@ -62,12 +63,13 @@ body {
 .mainjelly{
     border-style: none;
     position: inherit;
-    margin: -70px;
+    margin: -60px;
 }
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: 500px;
+    
 }
 .imgdis {
 	padding: 3px;
@@ -128,13 +130,13 @@ btn {
 }
 .header .skew:before {
 	content: '';
-	padding: 50px;
+	padding: 20px;
     position: absolute;
     left: 0;
 	bottom: 0;
     overflow: visible;
     width: 100%;
-    min-height: 55vh;
+    min-height: 23vh;
     background: #3e2e83; /* Old browsers */
 		background: #a50837; /* Old browsers */
 		background: -moz-linear-gradient(45deg, #a50837 0%, #4d009b 100%); /* FF3.6-15 */
