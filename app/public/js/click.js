@@ -51,7 +51,7 @@ $(document).ready(function() {
             var still = results[k].images.fixed_height_still.url;
             var rating =   results[k].rating;
              if (rating === "r" || rating ==="pg-13" ) {
-             var removed = results.splice(data);
+             results.splice(data);
             }
             var gLink = '<a href="' + results[k].url + '" target="_blank">Giphy</a>';
             var oUrl = '<a href="' + results[k].source + '" target="_blank">Source</a>';
@@ -63,10 +63,10 @@ $(document).ready(function() {
             var cardHold = $("<div class=\"cardA animated fadeInDown delay-3s \">");
             var gifImage = $("<img class='imgdis'>");
             gifImage.attr("src", still);
-            gifImage.attr("data-still", still);
-            gifImage.attr("data-animate", animated);
             gifImage.attr("data-state", "still");
-            gifImage.attr("src", animated);
+            gifImage.attr("data-still", still);
+            // gifImage.attr("data-animate", animated);
+            // gifImage.attr("src", animated);
             gifImage.attr("alt", "image");
             
             cardHold.append(gifImage, p);
@@ -76,12 +76,17 @@ $(document).ready(function() {
   });
   $(document).on("click", ".imgdis", function() {
     var state = $(this).attr("data-state");
-
     if (state === "still") {
+      gifImage.attr("data-animate", animated);
+      gifImage.attr("src", animated);
+$(this).attr("src", $(this).attr("data-still"));
+$(this).attr("data-state", "still");
       $(this).attr("src", $(this).attr("data-animate"));
       $(this).attr("data-state", "animate");
     }
     else {
+        gifImage.attr("data-animate", animated);
+            gifImage.attr("src", animated);
       $(this).attr("src", $(this).attr("data-still"));
       $(this).attr("data-state", "still");
     }
@@ -94,7 +99,6 @@ $(document).ready(function() {
     makeButtons()
     }
   });
-  // ===== Scroll to Top ==== 
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) { 
         $('#return-to-top').fadeIn(200); 
