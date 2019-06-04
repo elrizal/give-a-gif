@@ -195,28 +195,14 @@ section {
 }
 placeholder,
 .form-control {
-    width: 60%;
+    width: 12em;
     color: rgb(185, 185, 185) !important;
+}
+#animal-input{
+    width: 12em
 }
 .material-icons {
 	font-size: 3em !important;
-}
-
-@media screen and (min-width: 700px) and (max-width: 1024px) {
-    .cardA {
-			width: 40vw;
-		}
-		.titleCard {
-			font-size: 1.6em;
-			margin-top: 10px;
-		}
-    .imgdis {
-			 padding: 0px;
-             max-width: 300px;
-		}
-		.header .skew:before {
-			max-height: 99.8%;
-		}
 }
 
 @media screen and (min-width: 300px) and (max-width: 667px){
@@ -237,4 +223,20 @@ placeholder,
 				height: 100%;
 				margin-top: 10px;
 			}
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .cardA {
+			width: 40vw;
+		}
+		.titleCard {
+			font-size: 1.6em;
+			margin-top: 10px;
+		}
+    .imgdis {
+			 padding: 0px;
+             max-width: 300px;
+		}
+		.header .skew:before {
+			max-height: 99.8%;
+		}
 }
