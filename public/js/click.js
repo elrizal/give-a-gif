@@ -19,9 +19,7 @@ $(document).ready(function() {
   function makeButtons() {
     $("#animal-buttons").empty();
   for (var i = 0; i < topics.length; i++) {
-      var button = $("<button>");
-      button.addClass("btn");
-      button.attr("data-type", topics[i]);
+      var button = $(`<button class='btn' data-type='${topics[i]}'>`);
       button.text(topics[i]);
       $("#animal-buttons").append(button);
   }
